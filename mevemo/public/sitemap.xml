@@ -1,52 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://mevemo.com/</loc>
+        <loc>https://mevemo.de/</loc>
     </url>
     <url>
-        <loc>https://mevemo.com/about/</loc>
+        <loc>https://mevemo.de/about/</loc>
     </url>
     <url>
-        <loc>https://mevemo.com/archive/</loc>
+        <loc>https://mevemo.de/archive/</loc>
     </url>
     <url>
-        <loc>https://mevemo.com/i-dont-like-javascript/</loc>
-        <lastmod>2019-02-02</lastmod>
-    </url>
-    <url>
-        <loc>https://mevemo.com/learning-javascript/</loc>
+        <loc>https://mevemo.de/game/</loc>
         <lastmod>2019-01-03</lastmod>
     </url>
     <url>
-        <loc>https://mevemo.com/more-ranting/</loc>
-        <lastmod>2019-02-03</lastmod>
+        <loc>https://mevemo.de/more-games/</loc>
+        <lastmod>2022-10-05</lastmod>
     </url>
     <url>
-        <loc>https://mevemo.com/page/1/</loc>
+        <loc>https://mevemo.de/page/1/</loc>
     </url>
     <url>
-        <loc>https://mevemo.com/page/2/</loc>
+        <loc>https://mevemo.de/page/2/</loc>
     </url>
     <url>
-        <loc>https://mevemo.com/tags/</loc>
+        <loc>https://mevemo.de/tags/</loc>
     </url>
     <url>
-        <loc>https://mevemo.com/tags/javascript/</loc>
+        <loc>https://mevemo.de/tags/games/</loc>
     </url>
     <url>
-        <loc>https://mevemo.com/tags/mevemo/</loc>
+        <loc>https://mevemo.de/tags/javascript/</loc>
     </url>
     <url>
-        <loc>https://mevemo.com/tags/rant/</loc>
+        <loc>https://mevemo.de/tags/mevemo/</loc>
     </url>
     <url>
-        <loc>https://mevemo.com/tags/showcase/</loc>
+        <loc>https://mevemo.de/tags/showcase/</loc>
     </url>
     <url>
-        <loc>https://mevemo.com/tags/welcome/</loc>
+        <loc>https://mevemo.de/tags/videos/</loc>
     </url>
     <url>
-        <loc>https://mevemo.com/welcome-terminimal-theme/</loc>
+        <loc>https://mevemo.de/tags/welcome/</loc>
+    </url>
+    <url>
+        <loc>https://mevemo.de/tags/youtube/</loc>
+    </url>
+    <url>
+        <loc>https://mevemo.de/videos/</loc>
+        <lastmod>2020-02-02</lastmod>
+    </url>
+    <url>
+        <loc>https://mevemo.de/welcome-mevemo/</loc>
         <lastmod>2024-11-15</lastmod>
     </url>
 </urlset>

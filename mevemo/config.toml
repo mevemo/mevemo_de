@@ -1,5 +1,5 @@
 # Be sure to change these!
-base_url = "https://mevemo.com"
+base_url = "https://mevemo.de"
 title = "mevemo is the internet hub of Maik Heinrich"
 
 # Sass compilation is required
@@ -35,7 +35,7 @@ accent_color = "blue"
 background_color = "blue"
 
 # The logo text - defaults to "Terminimal theme"
-logo_text = "mevemo.com"
+logo_text = "mevemo.de"
 
 # The logo link - defaults to base_url.
 #logo_home_link = "/take/me/away!"

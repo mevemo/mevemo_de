@@ -2,101 +2,754 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
       <title>mevemo is the internet hub of Maik Heinrich</title>
-      <link>https://mevemo.com</link>
+      <link>https://mevemo.de</link>
       <description></description>
       <generator>Zola</generator>
       <language>en</language>
-      <atom:link href="https://mevemo.com/rss.xml" rel="self" type="application/rss+xml"/>
+      <atom:link href="https://mevemo.de/rss.xml" rel="self" type="application/rss+xml"/>
       <lastBuildDate>Fri, 15 Nov 2024 00:00:00 +0000</lastBuildDate>
       <item>
           <title>Welcome to mevemo.com</title>
           <pubDate>Fri, 15 Nov 2024 00:00:00 +0000</pubDate>
           <author>Unknown</author>
-          <link>https://mevemo.com/welcome-terminimal-theme/</link>
-          <guid>https://mevemo.com/welcome-terminimal-theme/</guid>
-          <description xml:base="https://mevemo.com/welcome-terminimal-theme/">&lt;p&gt;Welcome to mevemo.com! This is my new iteration.&lt;&#x2F;p&gt;
-&lt;p&gt;Code block (using &quot;boron&quot; theme):&lt;&#x2F;p&gt;
-&lt;pre data-lang=&quot;python&quot; style=&quot;background-color:#151515;color:#e8e8d3;&quot; class=&quot;language-python &quot;&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span style=&quot;color:#888888;&quot;&gt;#!&#x2F;usr&#x2F;bin&#x2F;python3
-&lt;&#x2F;span&gt;&lt;span&gt;
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fbfdc;&quot;&gt;class &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffb964;&quot;&gt;HelloPrinter&lt;&#x2F;span&gt;&lt;span&gt;:
-&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fbfdc;&quot;&gt;def &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fad07a;&quot;&gt;__init__&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffb964;&quot;&gt;self&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffb964;&quot;&gt;thing&lt;&#x2F;span&gt;&lt;span&gt;):
-&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffb964;&quot;&gt;self&lt;&#x2F;span&gt;&lt;span&gt;.thing = thing
-&lt;&#x2F;span&gt;&lt;span&gt;        
-&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fbfdc;&quot;&gt;def &lt;&#x2F;span&gt;&lt;span style=&quot;color:#fad07a;&quot;&gt;__call__&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffb964;&quot;&gt;self&lt;&#x2F;span&gt;&lt;span&gt;):
-&lt;&#x2F;span&gt;&lt;span&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffb964;&quot;&gt;print&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fbfdc;&quot;&gt;f&lt;&#x2F;span&gt;&lt;span style=&quot;color:#556633;&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#99ad6a;&quot;&gt;Hello, &lt;&#x2F;span&gt;&lt;span&gt;{&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffb964;&quot;&gt;self&lt;&#x2F;span&gt;&lt;span&gt;.thing}&lt;&#x2F;span&gt;&lt;span style=&quot;color:#99ad6a;&quot;&gt;!&lt;&#x2F;span&gt;&lt;span style=&quot;color:#556633;&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;)
-&lt;&#x2F;span&gt;&lt;span&gt;
-&lt;&#x2F;span&gt;&lt;span&gt;
-&lt;&#x2F;span&gt;&lt;span&gt;printer = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffb964;&quot;&gt;HelloPrinter&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#556633;&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#99ad6a;&quot;&gt;World&lt;&#x2F;span&gt;&lt;span style=&quot;color:#556633;&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;)
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ffb964;&quot;&gt;printer&lt;&#x2F;span&gt;&lt;span&gt;()
-&lt;&#x2F;span&gt;&lt;span&gt;
-&lt;&#x2F;span&gt;&lt;span style=&quot;color:#888888;&quot;&gt;# prints: Hello, World!
-&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
-&lt;p&gt;Inline code: &lt;code&gt;print(&quot;Hello world!&quot;)&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
-&lt;p&gt;Basic typography:&lt;&#x2F;p&gt;
-&lt;p&gt;&lt;em&gt;Italic text&lt;&#x2F;em&gt;.  &lt;strong&gt;Bold text&lt;&#x2F;strong&gt;. &lt;em&gt;&lt;strong&gt;Italic bold&lt;&#x2F;strong&gt;&lt;&#x2F;em&gt;. Link: &lt;a href=&quot;#&quot;&gt;click me&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
-&lt;h1 id=&quot;header-1&quot;&gt;Header 1&lt;&#x2F;h1&gt;
-&lt;h2 id=&quot;header-2&quot;&gt;Header 2&lt;&#x2F;h2&gt;
-&lt;h3 id=&quot;header-3&quot;&gt;Header 3&lt;&#x2F;h3&gt;
-&lt;h4 id=&quot;header-4&quot;&gt;Header 4&lt;&#x2F;h4&gt;
-&lt;p&gt;Quote:&lt;&#x2F;p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&quot;Theory is when you know everything but nothing works.
-Practice is when everything works but no one knows why.
-In our lab, theory and practice are combined: nothing works and no one knows why.&quot;&lt;&#x2F;p&gt;
-&lt;&#x2F;blockquote&gt;
-&lt;p&gt;Lists:&lt;&#x2F;p&gt;
-&lt;ul&gt;
-&lt;li&gt;A&lt;&#x2F;li&gt;
-&lt;li&gt;B&lt;&#x2F;li&gt;
-&lt;li&gt;CDEF
-&lt;ul&gt;
-&lt;li&gt;Nested Item
-&lt;ul&gt;
-&lt;li&gt;And more nesting&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;&#x2F;li&gt;
-&lt;li&gt;GHIJ&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;ol&gt;
-&lt;li&gt;One&lt;&#x2F;li&gt;
-&lt;li&gt;Two&lt;&#x2F;li&gt;
-&lt;li&gt;Three&lt;&#x2F;li&gt;
-&lt;&#x2F;ol&gt;
-&lt;p&gt;Horizontal line:&lt;&#x2F;p&gt;
+          <link>https://mevemo.de/welcome-mevemo/</link>
+          <guid>https://mevemo.de/welcome-mevemo/</guid>
+          <description xml:base="https://mevemo.de/welcome-mevemo/">&lt;p&gt;Welcome to mevemo.com! This is my new iteration.&lt;&#x2F;p&gt;
 &lt;hr &#x2F;&gt;
 </description>
       </item>
       <item>
-          <title>More ranting</title>
-          <pubDate>Sun, 03 Feb 2019 00:00:00 +0000</pubDate>
+          <title>More games</title>
+          <pubDate>Wed, 05 Oct 2022 00:00:00 +0000</pubDate>
           <author>Unknown</author>
-          <link>https://mevemo.com/more-ranting/</link>
-          <guid>https://mevemo.com/more-ranting/</guid>
-          <description xml:base="https://mevemo.com/more-ranting/">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu feugiat sapien. Aenean ligula nunc, laoreet id sem in, interdum bibendum felis. Donec vel dui neque. Praesent ac sem ut justo volutpat rutrum a imperdiet tellus. Nam lobortis massa non hendrerit hendrerit. Vivamus porttitor dignissim turpis, eget aliquam urna tincidunt non. Aliquam et fringilla turpis. Nullam eros est, eleifend in ornare sed, hendrerit eget est. Aliquam tellus felis, suscipit vitae ex vel, fringilla tempus massa. Nulla facilisi. Pellentesque lobortis consequat lectus. Maecenas ac libero elit.&lt;&#x2F;p&gt;
+          <link>https://mevemo.de/more-games/</link>
+          <guid>https://mevemo.de/more-games/</guid>
+          <description xml:base="https://mevemo.de/more-games/">&lt;p&gt;My short game of life in javascript attempt&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;canvas id=&quot;myCanvas&quot; width=&quot;800&quot; height=&quot;600&quot;&gt;&lt;&#x2F;canvas&gt;&lt;&#x2F;p&gt;
+  &lt;div &gt;
+  move with &quot;Arrowkeys&quot;, shoot with &quot;Space&quot;, enjoy.
+  &lt;&#x2F;div&gt;
+  &lt;script&gt;
+    var canvas = document.getElementById(&quot;myCanvas&quot;);
+    var ctx = canvas.getContext(&quot;2d&quot;);
+
+    &#x2F;&#x2F; Paddle and ball variables
+    var ballRadius = 10;
+    var x = canvas.width &#x2F; 2;
+    var y = canvas.height - 30;
+    var dx = 2;
+    var dy = -2;
+    var paddleHeight = 10;
+    var paddleWidth = 75;
+    var paddleX = (canvas.width - paddleWidth) &#x2F; 2;
+    var rightPressed = false;
+    var leftPressed = false;
+
+    &#x2F;&#x2F; Game of Life variables
+    var cellSize = 10;
+    var columns = Math.floor(canvas.width &#x2F; cellSize);
+    var rows = Math.floor(canvas.height &#x2F; cellSize);
+    var lifeGrid = createGrid(columns, rows);
+
+    &#x2F;&#x2F; Event listeners
+    document.addEventListener(&quot;keydown&quot;, keyDownHandler, false);
+    document.addEventListener(&quot;keyup&quot;, keyUpHandler, false);
+
+    function keyDownHandler(e) {
+      if (e.key === &quot;Right&quot; || e.key === &quot;ArrowRight&quot;) {
+        rightPressed = true;
+      } else if (e.key === &quot;Left&quot; || e.key === &quot;ArrowLeft&quot;) {
+        leftPressed = true;
+      } else if (e.code === &quot;Space&quot; || e.code === &quot;Spacebar&quot;) {
+        shootGlider(); 
+      }
+    }
+
+    function keyUpHandler(e) {
+      if (e.key === &quot;Right&quot; || e.key === &quot;ArrowRight&quot;) {
+        rightPressed = false;
+      } else if (e.key === &quot;Left&quot; || e.key === &quot;ArrowLeft&quot;) {
+        leftPressed = false;
+      }
+    }
+
+    function createGrid(columns, rows) {
+      var grid = new Array(columns);
+      for (var i = 0; i &lt; columns; i++) {
+        grid[i] = new Array(rows).fill(0);
+      }
+
+      &#x2F;&#x2F; Spawn a glider at the center of the canvas
+      var centerX = Math.floor(columns &#x2F; 2);
+      var centerY = Math.floor(rows &#x2F; 2);
+
+      grid[centerX][centerY - 1] = 1;
+      grid[centerX + 1][centerY] = 1;
+      grid[centerX - 1][centerY + 1] = 1;
+      grid[centerX][centerY + 1] = 1;
+      grid[centerX + 1][centerY + 1] = 1;
+
+      return grid;
+    }
+
+    function drawBall() {
+      ctx.beginPath();
+      ctx.arc(x, y, ballRadius, 0, Math.PI * 2);
+      ctx.fillStyle = &quot;#0095DD&quot;;
+      ctx.fill();
+      ctx.closePath();
+    }
+
+    function drawPaddle() {
+      ctx.beginPath();
+      ctx.rect(paddleX, canvas.height - paddleHeight, paddleWidth, paddleHeight);
+      ctx.fillStyle = &quot;#0095DD&quot;;
+      ctx.fill();
+      ctx.closePath();
+    }
+
+    function drawGrid() {
+      ctx.strokeStyle = &quot;#ddd&quot;;
+      for (var i = 0; i &lt; columns; i++) {
+        for (var j = 0; j &lt; rows; j++) {
+          if (lifeGrid[i][j] === 1) {
+            ctx.fillStyle = &quot;#0095DD&quot;;
+            ctx.fillRect(i * cellSize, j * cellSize, cellSize, cellSize);
+          }
+          ctx.strokeRect(i * cellSize, j * cellSize, cellSize, cellSize);
+        }
+      }
+    }
+
+    function updateGrid() {
+      var newGrid = createGrid(columns, rows);
+
+      for (var i = 1; i &lt; columns - 1; i++) {
+        for (var j = 1; j &lt; rows - 1; j++) {
+          var liveNeighbors = 0;
+
+          for (var x = -1; x &lt;= 1; x++) {
+            for (var y = -1; y &lt;= 1; y++) {
+              liveNeighbors += lifeGrid[i + x][j + y];
+            }
+          }
+
+          liveNeighbors -= lifeGrid[i][j];
+
+          if (lifeGrid[i][j] === 1 &amp;&amp; (liveNeighbors &lt; 2 || liveNeighbors &gt; 3)) {
+            newGrid[i][j] = 0;
+          } else if (lifeGrid[i][j] === 0 &amp;&amp; liveNeighbors === 3) {
+            newGrid[i][j] = 1;
+          } else {
+            newGrid[i][j] = lifeGrid[i][j];
+          }
+        }
+      }
+
+      lifeGrid = newGrid;
+    }
+
+    function shootLife() {
+      var columnIndex = Math.floor(paddleX &#x2F; cellSize);
+      &#x2F;&#x2F; Check if there is enough space to spawn the glider
+      if (columnIndex &gt; 0 &amp;&amp; columnIndex &lt; columns - 2) {
+        lifeGrid[columnIndex][rows - 6] = 1;
+        lifeGrid[columnIndex + 1][rows - 5] = 1;
+        lifeGrid[columnIndex + 2][rows - 5] = 1;
+        lifeGrid[columnIndex + 2][rows - 6] = 1;
+        lifeGrid[columnIndex + 1][rows - 7] = 1;
+        }}
+
+
+    function shootGlider() {
+      var columnIndex = Math.floor(paddleX &#x2F; cellSize);
+
+      &#x2F;&#x2F; Check if there is enough space to spawn the glider
+      if (columnIndex &gt; 0 &amp;&amp; columnIndex &lt; columns - 2) {
+        lifeGrid[columnIndex][rows - 7] = 1;
+        lifeGrid[columnIndex - 1][rows - 7] = 1;
+        lifeGrid[columnIndex - 1][rows - 6] = 1;
+        lifeGrid[columnIndex - 1][rows - 5] = 1;
+        lifeGrid[columnIndex + 1][rows - 6] = 1;
+      }
+    }
+
+    function spawnGlider(x, y) {
+      if (x &gt;= 0 &amp;&amp; x &lt; columns - 2 &amp;&amp; y &gt;= 0 &amp;&amp; y &lt; rows - 2) {
+        lifeGrid[x][y - 1] = 1;
+        lifeGrid[x + 1][y] = 1;
+        lifeGrid[x - 1][y + 1] = 1;
+        lifeGrid[x][y + 1] = 1;
+        lifeGrid[x + 1][y + 1] = 1;
+      }
+    }
+
+    function draw() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      drawBall();
+      drawPaddle();
+      drawGrid();
+
+      if (x + dx &gt; canvas.width - ballRadius || x + dx &lt; ballRadius) {
+        spawnGlider(8,8);
+        dx = -dx;
+      }
+      if (y + dy &gt; canvas.height - ballRadius || y + dy &lt; ballRadius) {
+        spawnGlider(8,8);
+        dy = -dy;
+      }
+
+      if (rightPressed) {
+        paddleX += 7;
+        if (paddleX + paddleWidth &gt; canvas.width) {
+          paddleX = canvas.width - paddleWidth;
+        }
+      } else if (leftPressed) {
+        paddleX -= 7;
+        if (paddleX &lt; 0) {
+          paddleX = 0;
+        }
+      }
+
+      if (y + dy &gt;= canvas.height - ballRadius - paddleHeight) {
+        if (x &gt;= paddleX &amp;&amp; x &lt;= paddleX + paddleWidth) {
+        spawnGlider(8,8);
+          shootLife();
+          dy = -dy;
+        }
+      }
+      x += dx;
+      y += dy;
+      updateGrid();
+    }
+
+    function setStage(){
+      for (var i; i&lt;5; i++){
+        var z = 3 * i;
+        lifeGrid[z][3] = 1;
+        lifeGrid[z][4] = 1;
+        lifeGrid[z+1][3] = 1;
+        lifeGrid[z+1][4] = 1;
+      }
+    }
+    setStage();
+
+    setInterval(draw, 10);
+  &lt;&#x2F;script&gt;
 </description>
       </item>
       <item>
-          <title>I don&#x27;t like JavaScript</title>
-          <pubDate>Sat, 02 Feb 2019 00:00:00 +0000</pubDate>
+          <title>Collection of Videos</title>
+          <pubDate>Sun, 02 Feb 2020 00:00:00 +0000</pubDate>
           <author>Unknown</author>
-          <link>https://mevemo.com/i-dont-like-javascript/</link>
-          <guid>https://mevemo.com/i-dont-like-javascript/</guid>
-          <description xml:base="https://mevemo.com/i-dont-like-javascript/">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu feugiat sapien.&lt;&#x2F;p&gt;
-&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;wtfjs.com&quot;&gt;wtfjs.com&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
-&lt;pre data-lang=&quot;javascript&quot; style=&quot;background-color:#151515;color:#e8e8d3;&quot; class=&quot;language-javascript &quot;&gt;&lt;code class=&quot;language-javascript&quot; data-lang=&quot;javascript&quot;&gt;&lt;span&gt;&amp;gt;&amp;gt;&amp;gt; [&lt;&#x2F;span&gt;&lt;span style=&quot;color:#cf6a4c;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#cf6a4c;&quot;&gt;2&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#cf6a4c;&quot;&gt;3&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#cf6a4c;&quot;&gt;15&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#cf6a4c;&quot;&gt;30&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#cf6a4c;&quot;&gt;7&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#cf6a4c;&quot;&gt;5&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#cf6a4c;&quot;&gt;45&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#cf6a4c;&quot;&gt;60&lt;&#x2F;span&gt;&lt;span&gt;].sort()
-&lt;&#x2F;span&gt;&lt;span&gt;[&lt;&#x2F;span&gt;&lt;span style=&quot;color:#cf6a4c;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#cf6a4c;&quot;&gt;15&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#cf6a4c;&quot;&gt;2&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#cf6a4c;&quot;&gt;3&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#cf6a4c;&quot;&gt;30&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#cf6a4c;&quot;&gt;45&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#cf6a4c;&quot;&gt;5&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#cf6a4c;&quot;&gt;60&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#cf6a4c;&quot;&gt;7&lt;&#x2F;span&gt;&lt;span&gt;]
-&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+          <link>https://mevemo.de/videos/</link>
+          <guid>https://mevemo.de/videos/</guid>
+          <description xml:base="https://mevemo.de/videos/">&lt;p&gt;Here are some Videos I like&lt;&#x2F;p&gt;
+&lt;p&gt;{{ youtube }}&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
 </description>
       </item>
       <item>
-          <title>Learning JavaScript</title>
+          <title>Ball World</title>
           <pubDate>Thu, 03 Jan 2019 00:00:00 +0000</pubDate>
           <author>Unknown</author>
-          <link>https://mevemo.com/learning-javascript/</link>
-          <guid>https://mevemo.com/learning-javascript/</guid>
-          <description xml:base="https://mevemo.com/learning-javascript/">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eu feugiat sapien. Aenean ligula nunc, laoreet id sem in, interdum bibendum felis. Donec vel dui neque. Praesent ac sem ut justo volutpat rutrum a imperdiet tellus. Nam lobortis massa non hendrerit hendrerit. Vivamus porttitor dignissim turpis, eget aliquam urna tincidunt non. Aliquam et fringilla turpis. Nullam eros est, eleifend in ornare sed, hendrerit eget est. Aliquam tellus felis, suscipit vitae ex vel, fringilla tempus massa. Nulla facilisi. Pellentesque lobortis consequat lectus. Maecenas ac libero elit.&lt;&#x2F;p&gt;
+          <link>https://mevemo.de/game/</link>
+          <guid>https://mevemo.de/game/</guid>
+          <description xml:base="https://mevemo.de/game/">&lt;p&gt;&lt;canvas id=&quot;myCanvas&quot; width=&quot;900&quot; height=&quot;600&quot;&gt;&lt;&#x2F;canvas&gt;&lt;&#x2F;p&gt;
+&lt;table&gt;
+&lt;tr&gt;
+    &lt;td&gt;&lt;&#x2F;td&gt;
+    &lt;td&gt;&lt;&#x2F;td&gt;
+    &lt;td&gt;&lt;&#x2F;td&gt;
+ &lt;td colspan=3&gt;
+  &lt;table class=&quot;logTable&quot;&gt;
+    &lt;tr&gt;
+      &lt;th&gt;__________&lt;&#x2F;th&gt;
+      &lt;th&gt;X Position&lt;&#x2F;th&gt;
+      &lt;th&gt;Y Position&lt;&#x2F;th&gt;
+      &lt;th&gt;delta X&lt;&#x2F;th&gt;
+      &lt;th&gt;delta Y&lt;&#x2F;th&gt;
+    &lt;&#x2F;tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Player&lt;&#x2F;td&gt;
+      &lt;td&gt;
+        &lt;div id=&quot;logP&quot;&gt; &lt;&#x2F;div&gt; 
+      &lt;&#x2F;td&gt;
+      &lt;td&gt;
+        &lt;div id=&quot;logP_Y&quot;&gt; &lt;&#x2F;div&gt; 
+      &lt;&#x2F;td&gt;
+      &lt;td&gt;&lt;&#x2F;td&gt;
+      &lt;td&gt;&lt;&#x2F;td&gt;
+    &lt;&#x2F;tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Ball&lt;&#x2F;td&gt;
+      &lt;td&gt;
+        &lt;div id=&quot;logB&quot;&gt; &lt;&#x2F;div&gt;
+      &lt;&#x2F;td&gt;
+      &lt;td&gt;
+        &lt;div id=&quot;logB_Y&quot;&gt; &lt;&#x2F;div&gt;
+      &lt;&#x2F;td&gt;
+      &lt;td&gt;
+        &lt;div id=&quot;logB_dx&quot;&gt; &lt;&#x2F;div&gt;
+      &lt;&#x2F;td&gt;
+      &lt;td&gt;
+        &lt;div id=&quot;logB_dy&quot;&gt; &lt;&#x2F;div&gt;
+      &lt;&#x2F;td&gt;
+    &lt;&#x2F;tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Touch&lt;&#x2F;td&gt;
+      &lt;td&gt;
+        &lt;div id=&quot;logT&quot;&gt; &lt;&#x2F;div&gt;
+      &lt;&#x2F;td&gt;
+      &lt;td&gt;
+        &lt;div id=&quot;logT_Y&quot;&gt; &lt;&#x2F;div&gt;
+      &lt;&#x2F;td&gt;
+      &lt;td&gt;&lt;&#x2F;td&gt;
+      &lt;td&gt;&lt;&#x2F;td&gt;
+    &lt;&#x2F;tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Bullets&lt;&#x2F;td&gt;
+      &lt;td&gt;
+        &lt;div id=&quot;logBullets&quot;&gt; &lt;&#x2F;div&gt;
+      &lt;&#x2F;td&gt;
+      &lt;td&gt;
+        &lt;div id=&quot;logT_Y&quot;&gt; &lt;&#x2F;div&gt;
+      &lt;&#x2F;td&gt;
+      &lt;td&gt;&lt;&#x2F;td&gt;
+      &lt;td&gt;&lt;&#x2F;td&gt;
+    &lt;&#x2F;tr&gt;
+  &lt;&#x2F;table&gt;
+ &lt;&#x2F;td&gt;
+&lt;&#x2F;tr&gt;
+&lt;tr&gt;
+  &lt;td&gt;&lt;&#x2F;td&gt;
+  &lt;td&gt;&lt;div id=&quot;up-touch&quot;&gt;UP&lt;&#x2F;div&gt;&lt;&#x2F;td&gt;
+  &lt;td&gt;&lt;&#x2F;td&gt;
+  &lt;td&gt;&lt;&#x2F;td&gt;
+  &lt;td&gt;&lt;&#x2F;td&gt;
+  &lt;td&gt;&lt;div class=&quot;roundButton&quot;  id=&quot;a-touch&quot;&gt;A&lt;&#x2F;div&gt;&lt;&#x2F;td&gt;
+&lt;&#x2F;tr&gt;
+&lt;tr&gt;
+  &lt;td&gt;&lt;div id=&quot;left-touch&quot;&gt;LEFT&lt;&#x2F;div&gt;&lt;&#x2F;td&gt;
+  &lt;td&gt;&lt;div id=&quot;center-touch&quot;&gt;&lt;&#x2F;td&gt;
+  &lt;td&gt;&lt;div id=&quot;right-touch&quot;&gt;RIGHT&lt;&#x2F;div&gt;&lt;&#x2F;td&gt;
+  &lt;td&gt;&lt;div id=&quot;center-touch&quot;&gt;&lt;&#x2F;td&gt;
+  &lt;td&gt;&lt;div id=&quot;b-touch&quot; class=&quot;roundButton&quot;&gt;B&lt;&#x2F;div&gt;&lt;&#x2F;td&gt;
+  &lt;td&gt;&lt;&#x2F;td&gt;
+&lt;&#x2F;tr&gt;
+&lt;tr&gt;
+  &lt;td&gt;&lt;&#x2F;td&gt;
+  &lt;td&gt;&lt;div id=&quot;down-touch&quot;&gt;DOWN&lt;&#x2F;div&gt;&lt;&#x2F;td&gt;
+  &lt;td&gt;&lt;&#x2F;td&gt;
+  &lt;td&gt;&lt;&#x2F;td&gt;
+  &lt;td&gt;&lt;&#x2F;td&gt;
+  &lt;td&gt;&lt;&#x2F;td&gt;
+&lt;&#x2F;tr&gt;
+&lt;&#x2F;table&gt;
+&lt;script&gt;
+&#x2F;&#x2F; JavaScript code goes here
+let canvas = document.getElementById(&quot;myCanvas&quot;);
+let ctx = canvas.getContext(&quot;2d&quot;);
+let bgColor = &quot;#dde4bb&quot; ; &#x2F;&#x2F; &quot;#0095DD&quot;;
+let entropy = 1;
+let zz = 0;
+var score = 0;
+
+
+let balls = [];
+balls[0] = {
+  radius : 10,
+       x : 300,
+       y : 300,
+      dx : 2,
+      dy : -3,
+      vx : 2 &#x2F; 10,
+      vy : -3 &#x2F; 10,
+   color : &quot;#333c4e&quot; 
+}
+let ball = {
+  radius : 10,
+       x : 300,
+       y : 300,
+      dx : 2,
+      dy : -3,
+      vx : 2 &#x2F; 10,
+      vy : -3 &#x2F; 10,
+   color : &quot;#333c4e&quot; 
+}
+
+let player = {
+      height : 40,
+       width : 40,
+      radius : 40,
+           x : 40,
+           y : 40,
+       color : &quot;#333c4e&quot; 
+}
+
+let obstacle = {
+        x : 400,
+        y : 250,
+     size : 100,
+    color : &quot;#333c4e&quot; 
+}
+
+
+let rightPressed = false;
+let leftPressed = false;
+let upPressed = false;
+let downPressed = false;
+
+const upTouch = document.getElementById(&quot;up-touch&quot;);
+const downTouch = document.getElementById(&quot;down-touch&quot;);
+const leftTouch = document.getElementById(&quot;left-touch&quot;);
+const rightTouch = document.getElementById(&quot;right-touch&quot;);
+const aTouch = document.getElementById(&quot;a-touch&quot;);
+const bTouch = document.getElementById(&quot;b-touch&quot;);
+
+leftTouch.addEventListener(&quot;touchstart&quot;, e =&gt; {
+      e.preventDefault();
+      leftPressed = true;
+})
+rightTouch.addEventListener(&quot;touchstart&quot;, e =&gt; {
+      e.preventDefault();
+      rightPressed = true;
+})
+upTouch.addEventListener(&quot;touchstart&quot;, e =&gt; {
+      e.preventDefault();
+      upPressed = true;
+})
+downTouch.addEventListener(&quot;touchstart&quot;, e =&gt; {
+      e.preventDefault();
+      downPressed = true;
+})
+aTouch.addEventListener(&quot;touchstart&quot;, e =&gt; {
+      e.preventDefault();
+      shootBall();
+})
+bTouch.addEventListener(&quot;touchstart&quot;, e =&gt; {
+      e.preventDefault();
+      window.location.reload();
+})
+
+&#x2F;&#x2F;STOP Touch Event
+leftTouch.addEventListener(&quot;touchend&quot;, e =&gt; {
+      e.preventDefault();
+      leftPressed = false;
+})
+rightTouch.addEventListener(&quot;touchend&quot;, e =&gt; {
+      e.preventDefault();
+      rightPressed = false;
+})
+upTouch.addEventListener(&quot;touchend&quot;, e =&gt; {
+      e.preventDefault();
+      upPressed = false;
+})
+downTouch.addEventListener(&quot;touchend&quot;, e =&gt; {
+      e.preventDefault();
+      downPressed = false;
+})
+aTouch.addEventListener(&quot;touchend&quot;, e =&gt; {
+      e.preventDefault();
+})
+bTouch.addEventListener(&quot;touchend&quot;, e =&gt; {
+      e.preventDefault();
+})
+
+&#x2F;&#x2F; Eventlisteners
+document.addEventListener(&quot;keydown&quot;, keyDownHandler, false);
+document.addEventListener(&quot;keyup&quot;, keyUpHandler, false);
+document.addEventListener(&quot;touchstart&quot;, touchStartHandler, false);
+document.addEventListener(&quot;touchend&quot;, touchEndHandler, false);
+
+
+
+&#x2F;&#x2F; TOUCH Handlers
+function touchStartHandler(e) {
+    console.log(e);
+    [...e.changedTouches].forEach(touch =&gt; {
+        
+        document.getElementById(&quot;logT&quot;).innerHTML = parseInt(touch.pageX);
+        document.getElementById(&quot;logT_Y&quot;).innerHTML = parseInt(touch.pageY);
+
+    })
+}
+function touchEndHandler(e) {
+        console.log(e);
+}
+
+&#x2F;&#x2F; DOWN Presses
+function keyDownHandler(e) {
+    if(e.key == &quot;Right&quot; || e.key == &quot;ArrowRight&quot; || e.key == &quot;d&quot;) {
+        rightPressed = true;
+      e.preventDefault();
+    }
+    if(e.key == &quot;Left&quot; || e.key == &quot;ArrowLeft&quot; || e.key == &quot;a&quot;) {
+        leftPressed = true;
+      e.preventDefault();
+    }
+
+    if(e.key == &quot;Up&quot; || e.key == &quot;ArrowUp&quot; || e.key == &quot;w&quot;) {
+        upPressed = true;
+      e.preventDefault();
+    }
+    if(e.key == &quot;Down&quot; || e.key == &quot;ArrowDown&quot; || e.key == &quot;s&quot;){
+        downPressed = true;
+      e.preventDefault();
+    }
+    if(e.key == &quot;Shift&quot; || e.key == &quot;Control&quot;){
+    
+      e.preventDefault();
+        shootBall();
+    }
+}
+
+&#x2F;&#x2F; KEY Releases
+function keyUpHandler(e) {
+    if(e.key == &quot;Right&quot; || e.key == &quot;ArrowRight&quot; || e.key == &quot;d&quot;) {
+        rightPressed = false;
+      e.preventDefault();
+    }
+    if(e.key == &quot;Left&quot; || e.key == &quot;ArrowLeft&quot; || e.key == &quot;a&quot;) {
+        leftPressed = false;
+      e.preventDefault();
+    }
+    if(e.key == &quot;Up&quot; || e.key == &quot;ArrowUp&quot; || e.key == &quot;w&quot;) {
+        upPressed = false;
+      e.preventDefault();
+    }
+    if(e.key == &quot;Down&quot; || e.key == &quot;ArrowDown&quot; || e.key == &quot;s&quot;) {
+        downPressed = false;
+      e.preventDefault();
+    }
+}
+
+function drawBackground() {
+    ctx.beginPath();
+    ctx.rect(0, 0,  canvas.width, canvas.height);
+    ctx.fillStyle = bgColor;
+    ctx.fill();
+    ctx.closePath();
+ 
+}
+
+function drawScore() {
+    ctx.font = &quot;30px Verdana&quot;;
+    &#x2F;&#x2F; Create gradient
+    var gradient = ctx.createLinearGradient(0, 0, canvas.width, 0);
+    gradient.addColorStop(&quot;0&quot;,&quot; magenta&quot;);
+    gradient.addColorStop(&quot;0.5&quot;, &quot;blue&quot;);
+    gradient.addColorStop(&quot;1.0&quot;, &quot;red&quot;);
+    &#x2F;&#x2F; Fill with gradient
+    &#x2F;&#x2F;ctx.fillStyle = gradient;
+    var scoreNow = &quot;Score: &quot; + parseInt(score);
+    ctx.fillText(scoreNow, 10, 90);
+}
+
+function drawBall() {
+    ctx.beginPath();
+    ctx.arc(ball.x, ball.y, ball.radius, 0, Math.PI*2);
+    ctx.fillStyle = ball.color;
+    ctx.fill();
+    ctx.closePath();
+    document.getElementById(&quot;logB&quot;).innerHTML = parseInt(ball.x);
+    document.getElementById(&quot;logB_Y&quot;).innerHTML = parseInt(ball.y);
+}
+
+function drawBullets() {
+  for (let bullet in balls){
+    ctx.beginPath();
+    ctx.arc(balls[bullet].x, balls[bullet].y, balls[bullet].radius, 0, Math.PI*2);
+    ctx.fillStyle = balls[bullet].color;
+    ctx.fill();
+    ctx.closePath();
+  }
+}
+
+
+function drawPaddle() {
+    ctx.beginPath();
+    ctx.arc(player.x, player.y, player.radius , 0, Math.PI*2);
+    ctx.fillStyle = player.color;
+    ctx.fill();
+    ctx.closePath();
+    document.getElementById(&quot;logP&quot;).innerHTML = player.x;
+    document.getElementById(&quot;logP_Y&quot;).innerHTML = player.y;
+}
+
+function drawBorder(){
+    ctx.beginPath();
+    ctx.rect(obstacle.x, obstacle.y, obstacle.size, obstacle.size);
+    ctx.fillStyle = obstacle.color;
+    ctx.fill();
+    ctx.closePath();
+    }
+
+
+function shootBall() {
+    var sizes = [10, 20, 30, 40];
+    var colors = [&quot;#333c4e&quot;, &quot;#7132a8&quot;, &quot;#34a832&quot;, &quot;#a83232&quot;,
+        &quot;#fcfc51&quot;, &quot;#03fcfc&quot;, &quot;#ff8800&quot;, &quot;#00d0ff&quot;];
+    const yy = parseInt(Math.random() * sizes.length)
+    const xx = parseInt(Math.random() * colors.length)
+    balls.push( {
+          radius : sizes[yy],
+               x : player.x,
+               y : (player.y - player.radius),
+              dx : 2,
+              dy : -3,
+              vx : 2 &#x2F; 10,
+              vy : -3 &#x2F; 10,
+           color : colors[xx]
+    })
+    document.getElementById(&quot;logBullets&quot;).innerHTML = balls.length;
+}
+
+function isInBox(obj) {
+    
+    let toFarRight = ( obj.x - obj.radius + 5) &gt; (obstacle.x + obstacle.size);
+    let toFarLeft = ( obj.x + obj.radius - 5) &lt; obstacle.x;
+    let toHigh = (obj.y + obj.radius - 5) &lt; obstacle.y;
+    let toLow = (obj.y - obj.radius + 5) &gt; (obstacle.y + obstacle.size);
+
+
+    if(!toFarRight &amp;&amp; !toFarLeft &amp;&amp; !toHigh &amp;&amp; !toLow){
+      score += 1;
+      return true;
+    } else {
+      return false;
+    }
+}
+
+function moveIt(obj, time){
+    obj.x += parseInt(obj.vx * time);
+    obj.y += parseInt(obj.vy * time);
+}
+
+function draw() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    drawBackground();
+    drawBorder();
+    drawBall();
+    drawBullets();
+    drawPaddle();
+    &#x2F;&#x2F; drawScore();
+}
+
+function checkCollision(bb){
+    &#x2F;&#x2F; Check Collsion Ball and floor or seeling
+    if(bb.x  &gt; canvas.width - bb.radius || bb.x  &lt; bb.radius) {
+        bb.vx = -bb.vx;
+    }
+    &#x2F;&#x2F; Check for Collision to wall left and right
+    if(bb.y &gt; canvas.height - bb.radius || bb.y &lt; bb.radius) {
+        bb.vy = -bb.vy;
+    }
+    if(isInBox(bb)){
+        bb.vx *= -1;
+        bb.vy *= -1;
+    }
+    return bb;
+
+}
+
+let t0, previousTimeStamp;
+let done = false;
+
+function step(timestamp) {
+  if (t0 === undefined) {
+      t0 = timestamp;
+      }
+  let total_elapsed = timestamp - t0;
+  let dt = timestamp  - previousTimeStamp;
+
+    &#x2F;&#x2F; START of Game Logic referring to dt
+
+    ball = checkCollision(ball);
+
+    balls.forEach(function (item, index) {
+            balls[index] = checkCollision(item);
+    });
+
+    &#x2F;* &#x2F;&#x2F; Check Collsion Ball and floor or seeling *&#x2F;
+    &#x2F;* if(ball.x  &gt; canvas.width - ball.radius || ball.x  &lt; ball.radius) { *&#x2F;
+    &#x2F;*     ball.vx = -ball.vx; *&#x2F;
+    &#x2F;* } *&#x2F;
+    &#x2F;* &#x2F;&#x2F; Check for Collision to wall left and right *&#x2F;
+    &#x2F;* if(ball.y &gt; canvas.height - ball.radius || ball.y &lt; ball.radius) { *&#x2F;
+    &#x2F;*     ball.vy = -ball.vy; *&#x2F;
+    &#x2F;* } *&#x2F;
+    &#x2F;* if(isInBox(ball)){ *&#x2F;
+    &#x2F;*     ball.vx *= -1; *&#x2F;
+    &#x2F;*     ball.vy *= -1; *&#x2F;
+    &#x2F;* } *&#x2F;
+
+
+    &#x2F;&#x2F; Check for collision between ball and player i.e. paddle 
+    if(player.x - player.radius &lt; ball.x + ball.radius &amp;&amp; 
+        ball.x - ball.radius &lt; (player.x + player.radius) &amp;&amp; 
+        player.y - player.radius &lt; ball.y + ball.radius  &amp;&amp; 
+        ball.y - ball.radius &lt; player.y + player.radius) {
+          ball.vy *= -1;
+          ball.vx *= -1;
+    }
+    
+
+    &#x2F;&#x2F; check for collision between player and a Square Obstacle of oSize
+    if(rightPressed) {
+        player.x += 5;
+        if (isInBox(player)){
+            player.x -= 5;
+        }
+        if (player.x + player.radius &gt; canvas.width){
+            player.x = canvas.width - player.radius;
+        }
+    }
+      else if(leftPressed) {
+        player.x -= 5;
+        if (isInBox(player)){
+            player.x += 5;
+        }
+        if (player.x &lt; player.radius){
+            player.x = player.radius;
+        }
+    }
+    if(upPressed) {
+        player.y -= 5;
+        if (isInBox(player)){
+            player.y += 5;
+        }
+        if (player.y &lt; player.radius) {
+            player.y = player.radius;
+        }
+    }
+    if(downPressed) {
+       player.y += 5;
+        if (isInBox(player)){
+            player.y -= 5;
+        }
+       if (player.y &gt; canvas.height - player.radius) {
+           player.y = canvas.height - player.radius;
+       }
+    }
+   
+    &#x2F;&#x2F; move the Balls
+    if(!isNaN(dt)) {
+      moveIt(ball, dt);
+      for (let b in balls) {
+        moveIt(balls[b], dt);
+      }
+    }
+
+    draw();
+
+    &#x2F;&#x2F; der timer hier ist besser als der normale Intervaltimer
+    previousTimeStamp = timestamp
+    window.requestAnimationFrame(step);
+}
+window.requestAnimationFrame(step);
+
+&lt;&#x2F;script&gt;
 </description>
       </item>
     </channel>

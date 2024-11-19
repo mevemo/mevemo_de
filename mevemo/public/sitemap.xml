@@ -18,10 +18,32 @@
         <lastmod>2022-10-05</lastmod>
     </url>
     <url>
+        <loc>https://mevemo.de/more-music/</loc>
+        <lastmod>2024-11-16</lastmod>
+    </url>
+    <url>
+        <loc>https://mevemo.de/mum/</loc>
+        <lastmod>1958-12-05</lastmod>
+    </url>
+    <url>
+        <loc>https://mevemo.de/music/</loc>
+        <lastmod>1984-12-05</lastmod>
+    </url>
+    <url>
         <loc>https://mevemo.de/page/1/</loc>
     </url>
     <url>
         <loc>https://mevemo.de/page/2/</loc>
+    </url>
+    <url>
+        <loc>https://mevemo.de/page/3/</loc>
+    </url>
+    <url>
+        <loc>https://mevemo.de/page/4/</loc>
+    </url>
+    <url>
+        <loc>https://mevemo.de/paps/</loc>
+        <lastmod>1955-12-05</lastmod>
     </url>
     <url>
         <loc>https://mevemo.de/tags/</loc>
@@ -36,10 +58,13 @@
         <loc>https://mevemo.de/tags/mevemo/</loc>
     </url>
     <url>
+        <loc>https://mevemo.de/tags/music/</loc>
+    </url>
+    <url>
         <loc>https://mevemo.de/tags/showcase/</loc>
     </url>
     <url>
-        <loc>https://mevemo.de/tags/videos/</loc>
+        <loc>https://mevemo.de/tags/video/</loc>
     </url>
     <url>
         <loc>https://mevemo.de/tags/welcome/</loc>
@@ -53,6 +78,6 @@
     </url>
     <url>
         <loc>https://mevemo.de/welcome-mevemo/</loc>
-        <lastmod>2024-11-15</lastmod>
+        <lastmod>2024-12-31</lastmod>
     </url>
 </urlset>

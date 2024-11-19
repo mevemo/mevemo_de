@@ -1,11 +1,11 @@
 +++
-title = "Welcome to mevemo.com"
-date = 2024-11-15
+title = "Welcome to mevemo.de"
+date = 2024-12-31
 
 [taxonomies]
-tags = ["mevemo", "welcome", "showcase"]
+tags = ["welcome", "showcase"]
 +++
 
-Welcome to mevemo.com! This is my new iteration.
+Welcome to mevemo.de! This is my new iteration.
 
 ---

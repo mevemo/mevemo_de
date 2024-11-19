@@ -1,3 +1,47 @@
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+td {
+      border: none!important;;
+  }
+
+#center-touch {
+    height: 150px;
+    width: 150px;
+}
+
+#up-touch, #down-touch, #left-touch, #right-touch{
+            color: white;
+           height: 150px; 
+            width: 150px;
+          display: flex;
+      align-items: center;
+  justify-content: center;
+ background-color: #232323;
+} 
+
+#a-touch, #b-touch {
+        display: flex;
+    align-items: center;
+justify-content: center;
+}
+
+.roundButton {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+  background: #FF7A59;
+}
+
+
+
+
+
 .button-container {
   display:table;
   margin-left:auto;

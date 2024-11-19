@@ -3,15 +3,9 @@ title = "Collection of Videos"
 date = 2020-02-02
 
 [taxonomies]
-tags = ["mevemo", "videos", "YouTube"]
+tags = ["mevemo", "video", "YouTube"]
 +++
 
-Here are some Videos I like
 
-{{ youtube }}
-
-
-
----
-
-
+## Lex Fridman Interviews
+{{ youtube(id="xNXC9UZsgiA", autoplay=false, class="youtube") }}

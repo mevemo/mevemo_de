@@ -59,7 +59,7 @@
             
                 <li><a href="https://mevemo.de/archive">archive</a></li>
             
-                <li><a href="https://mevemo.de/about">about me</a></li>
+                <li><a href="https://mevemo.de/about">about</a></li>
             
                 <li><a href="https://github.com/mevemo" target="_blank" rel="noopener noreferrer">github</a></li>
             </ul>
@@ -73,6 +73,242 @@
     <div class="content">
         
         <div class="posts">
+                <div class="post on-list">
+                    
+    <h1 class="post-title"><a href="https://mevemo.de/more-games/">More games</a></h1>
+    <div class="post-meta-inline">
+        
+    <span class="post-date">
+            2022-10-05
+        </span>
+
+    </div>
+
+    
+        <span class="post-tags-inline">
+                :: tags:&nbsp;
+                <a class="post-tag" href="https://mevemo.de/tags/games/">#games</a></span>
+    
+
+
+                    <div class="post-content">
+            <p>My short game of life in javascript attempt</p>
+<p><canvas id="myCanvas" width="800" height="600"></canvas></p>
+  <div >
+  move with "Arrowkeys", shoot with "Space", enjoy.
+  </div>
+  <script>
+    var canvas = document.getElementById("myCanvas");
+    var ctx = canvas.getContext("2d");
+
+    // Paddle and ball variables
+    var ballRadius = 10;
+    var x = canvas.width / 2;
+    var y = canvas.height - 30;
+    var dx = 2;
+    var dy = -2;
+    var paddleHeight = 10;
+    var paddleWidth = 75;
+    var paddleX = (canvas.width - paddleWidth) / 2;
+    var rightPressed = false;
+    var leftPressed = false;
+
+    // Game of Life variables
+    var cellSize = 10;
+    var columns = Math.floor(canvas.width / cellSize);
+    var rows = Math.floor(canvas.height / cellSize);
+    var lifeGrid = createGrid(columns, rows);
+
+    // Event listeners
+    document.addEventListener("keydown", keyDownHandler, false);
+    document.addEventListener("keyup", keyUpHandler, false);
+
+    function keyDownHandler(e) {
+      if (e.key === "Right" || e.key === "ArrowRight") {
+        rightPressed = true;
+      } else if (e.key === "Left" || e.key === "ArrowLeft") {
+        leftPressed = true;
+      } else if (e.code === "Space" || e.code === "Spacebar") {
+        shootGlider(); 
+      }
+    }
+
+    function keyUpHandler(e) {
+      if (e.key === "Right" || e.key === "ArrowRight") {
+        rightPressed = false;
+      } else if (e.key === "Left" || e.key === "ArrowLeft") {
+        leftPressed = false;
+      }
+    }
+
+    function createGrid(columns, rows) {
+      var grid = new Array(columns);
+      for (var i = 0; i < columns; i++) {
+        grid[i] = new Array(rows).fill(0);
+      }
+
+      // Spawn a glider at the center of the canvas
+      var centerX = Math.floor(columns / 2);
+      var centerY = Math.floor(rows / 2);
+
+      grid[centerX][centerY - 1] = 1;
+      grid[centerX + 1][centerY] = 1;
+      grid[centerX - 1][centerY + 1] = 1;
+      grid[centerX][centerY + 1] = 1;
+      grid[centerX + 1][centerY + 1] = 1;
+
+      return grid;
+    }
+
+    function drawBall() {
+      ctx.beginPath();
+      ctx.arc(x, y, ballRadius, 0, Math.PI * 2);
+      ctx.fillStyle = "#0095DD";
+      ctx.fill();
+      ctx.closePath();
+    }
+
+    function drawPaddle() {
+      ctx.beginPath();
+      ctx.rect(paddleX, canvas.height - paddleHeight, paddleWidth, paddleHeight);
+      ctx.fillStyle = "#0095DD";
+      ctx.fill();
+      ctx.closePath();
+    }
+
+    function drawGrid() {
+      ctx.strokeStyle = "#ddd";
+      for (var i = 0; i < columns; i++) {
+        for (var j = 0; j < rows; j++) {
+          if (lifeGrid[i][j] === 1) {
+            ctx.fillStyle = "#0095DD";
+            ctx.fillRect(i * cellSize, j * cellSize, cellSize, cellSize);
+          }
+          ctx.strokeRect(i * cellSize, j * cellSize, cellSize, cellSize);
+        }
+      }
+    }
+
+    function updateGrid() {
+      var newGrid = createGrid(columns, rows);
+
+      for (var i = 1; i < columns - 1; i++) {
+        for (var j = 1; j < rows - 1; j++) {
+          var liveNeighbors = 0;
+
+          for (var x = -1; x <= 1; x++) {
+            for (var y = -1; y <= 1; y++) {
+              liveNeighbors += lifeGrid[i + x][j + y];
+            }
+          }
+
+          liveNeighbors -= lifeGrid[i][j];
+
+          if (lifeGrid[i][j] === 1 && (liveNeighbors < 2 || liveNeighbors > 3)) {
+            newGrid[i][j] = 0;
+          } else if (lifeGrid[i][j] === 0 && liveNeighbors === 3) {
+            newGrid[i][j] = 1;
+          } else {
+            newGrid[i][j] = lifeGrid[i][j];
+          }
+        }
+      }
+
+      lifeGrid = newGrid;
+    }
+
+    function shootLife() {
+      var columnIndex = Math.floor(paddleX / cellSize);
+      // Check if there is enough space to spawn the glider
+      if (columnIndex > 0 && columnIndex < columns - 2) {
+        lifeGrid[columnIndex][rows - 6] = 1;
+        lifeGrid[columnIndex + 1][rows - 5] = 1;
+        lifeGrid[columnIndex + 2][rows - 5] = 1;
+        lifeGrid[columnIndex + 2][rows - 6] = 1;
+        lifeGrid[columnIndex + 1][rows - 7] = 1;
+        }}
+
+
+    function shootGlider() {
+      var columnIndex = Math.floor(paddleX / cellSize);
+
+      // Check if there is enough space to spawn the glider
+      if (columnIndex > 0 && columnIndex < columns - 2) {
+        lifeGrid[columnIndex][rows - 7] = 1;
+        lifeGrid[columnIndex - 1][rows - 7] = 1;
+        lifeGrid[columnIndex - 1][rows - 6] = 1;
+        lifeGrid[columnIndex - 1][rows - 5] = 1;
+        lifeGrid[columnIndex + 1][rows - 6] = 1;
+      }
+    }
+
+    function spawnGlider(x, y) {
+      if (x >= 0 && x < columns - 2 && y >= 0 && y < rows - 2) {
+        lifeGrid[x][y - 1] = 1;
+        lifeGrid[x + 1][y] = 1;
+        lifeGrid[x - 1][y + 1] = 1;
+        lifeGrid[x][y + 1] = 1;
+        lifeGrid[x + 1][y + 1] = 1;
+      }
+    }
+
+    function draw() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      drawBall();
+      drawPaddle();
+      drawGrid();
+
+      if (x + dx > canvas.width - ballRadius || x + dx < ballRadius) {
+        spawnGlider(8,8);
+        dx = -dx;
+      }
+      if (y + dy > canvas.height - ballRadius || y + dy < ballRadius) {
+        spawnGlider(8,8);
+        dy = -dy;
+      }
+
+      if (rightPressed) {
+        paddleX += 7;
+        if (paddleX + paddleWidth > canvas.width) {
+          paddleX = canvas.width - paddleWidth;
+        }
+      } else if (leftPressed) {
+        paddleX -= 7;
+        if (paddleX < 0) {
+          paddleX = 0;
+        }
+      }
+
+      if (y + dy >= canvas.height - ballRadius - paddleHeight) {
+        if (x >= paddleX && x <= paddleX + paddleWidth) {
+        spawnGlider(8,8);
+          shootLife();
+          dy = -dy;
+        }
+      }
+      x += dx;
+      y += dy;
+      updateGrid();
+    }
+
+    function setStage(){
+      for (var i; i<5; i++){
+        var z = 3 * i;
+        lifeGrid[z][3] = 1;
+        lifeGrid[z][4] = 1;
+        lifeGrid[z+1][3] = 1;
+        lifeGrid[z+1][4] = 1;
+      }
+    }
+    setStage();
+
+    setInterval(draw, 10);
+  </script>
+
+        </div>
+
+                </div>
+            
                 <div class="post on-list">
                     
     <h1 class="post-title"><a href="https://mevemo.de/videos/">Collection of Videos</a></h1>
@@ -89,535 +325,20 @@
                 :: tags:&nbsp;
                 <a class="post-tag" href="https://mevemo.de/tags/youtube/">#YouTube</a>&nbsp;
                 <a class="post-tag" href="https://mevemo.de/tags/mevemo/">#mevemo</a>&nbsp;
-                <a class="post-tag" href="https://mevemo.de/tags/videos/">#videos</a></span>
+                <a class="post-tag" href="https://mevemo.de/tags/video/">#video</a></span>
     
 
 
                     <div class="post-content">
-            <p>Here are some Videos I like</p>
-<p>{{ youtube }}</p>
-<hr />
-
-        </div>
-
-                </div>
-            
-                <div class="post on-list">
-                    
-    <h1 class="post-title"><a href="https://mevemo.de/game/">Ball World</a></h1>
-    <div class="post-meta-inline">
-        
-    <span class="post-date">
-            2019-01-03
-        </span>
-
-    </div>
-
-    
-        <span class="post-tags-inline">
-                :: tags:&nbsp;
-                <a class="post-tag" href="https://mevemo.de/tags/games/">#games</a>&nbsp;
-                <a class="post-tag" href="https://mevemo.de/tags/javascript/">#javascript</a>&nbsp;
-                <a class="post-tag" href="https://mevemo.de/tags/mevemo/">#mevemo</a></span>
-    
-
-
-                    <div class="post-content">
-            <p><canvas id="myCanvas" width="900" height="600"></canvas></p>
-<table>
-<tr>
-    <td></td>
-    <td></td>
-    <td></td>
- <td colspan=3>
-  <table class="logTable">
-    <tr>
-      <th>__________</th>
-      <th>X Position</th>
-      <th>Y Position</th>
-      <th>delta X</th>
-      <th>delta Y</th>
-    </tr>
-    <tr>
-      <td>Player</td>
-      <td>
-        <div id="logP"> </div> 
-      </td>
-      <td>
-        <div id="logP_Y"> </div> 
-      </td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Ball</td>
-      <td>
-        <div id="logB"> </div>
-      </td>
-      <td>
-        <div id="logB_Y"> </div>
-      </td>
-      <td>
-        <div id="logB_dx"> </div>
-      </td>
-      <td>
-        <div id="logB_dy"> </div>
-      </td>
-    </tr>
-    <tr>
-      <td>Touch</td>
-      <td>
-        <div id="logT"> </div>
-      </td>
-      <td>
-        <div id="logT_Y"> </div>
-      </td>
-      <td></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td>Bullets</td>
-      <td>
-        <div id="logBullets"> </div>
-      </td>
-      <td>
-        <div id="logT_Y"> </div>
-      </td>
-      <td></td>
-      <td></td>
-    </tr>
-  </table>
- </td>
-</tr>
-<tr>
-  <td></td>
-  <td><div id="up-touch">UP</div></td>
-  <td></td>
-  <td></td>
-  <td></td>
-  <td><div class="roundButton"  id="a-touch">A</div></td>
-</tr>
-<tr>
-  <td><div id="left-touch">LEFT</div></td>
-  <td><div id="center-touch"></td>
-  <td><div id="right-touch">RIGHT</div></td>
-  <td><div id="center-touch"></td>
-  <td><div id="b-touch" class="roundButton">B</div></td>
-  <td></td>
-</tr>
-<tr>
-  <td></td>
-  <td><div id="down-touch">DOWN</div></td>
-  <td></td>
-  <td></td>
-  <td></td>
-  <td></td>
-</tr>
-</table>
-<script>
-// JavaScript code goes here
-let canvas = document.getElementById("myCanvas");
-let ctx = canvas.getContext("2d");
-let bgColor = "#dde4bb" ; // "#0095DD";
-let entropy = 1;
-let zz = 0;
-var score = 0;
-
-
-let balls = [];
-balls[0] = {
-  radius : 10,
-       x : 300,
-       y : 300,
-      dx : 2,
-      dy : -3,
-      vx : 2 / 10,
-      vy : -3 / 10,
-   color : "#333c4e" 
-}
-let ball = {
-  radius : 10,
-       x : 300,
-       y : 300,
-      dx : 2,
-      dy : -3,
-      vx : 2 / 10,
-      vy : -3 / 10,
-   color : "#333c4e" 
-}
-
-let player = {
-      height : 40,
-       width : 40,
-      radius : 40,
-           x : 40,
-           y : 40,
-       color : "#333c4e" 
-}
-
-let obstacle = {
-        x : 400,
-        y : 250,
-     size : 100,
-    color : "#333c4e" 
-}
-
-
-let rightPressed = false;
-let leftPressed = false;
-let upPressed = false;
-let downPressed = false;
-
-const upTouch = document.getElementById("up-touch");
-const downTouch = document.getElementById("down-touch");
-const leftTouch = document.getElementById("left-touch");
-const rightTouch = document.getElementById("right-touch");
-const aTouch = document.getElementById("a-touch");
-const bTouch = document.getElementById("b-touch");
-
-leftTouch.addEventListener("touchstart", e => {
-      e.preventDefault();
-      leftPressed = true;
-})
-rightTouch.addEventListener("touchstart", e => {
-      e.preventDefault();
-      rightPressed = true;
-})
-upTouch.addEventListener("touchstart", e => {
-      e.preventDefault();
-      upPressed = true;
-})
-downTouch.addEventListener("touchstart", e => {
-      e.preventDefault();
-      downPressed = true;
-})
-aTouch.addEventListener("touchstart", e => {
-      e.preventDefault();
-      shootBall();
-})
-bTouch.addEventListener("touchstart", e => {
-      e.preventDefault();
-      window.location.reload();
-})
-
-//STOP Touch Event
-leftTouch.addEventListener("touchend", e => {
-      e.preventDefault();
-      leftPressed = false;
-})
-rightTouch.addEventListener("touchend", e => {
-      e.preventDefault();
-      rightPressed = false;
-})
-upTouch.addEventListener("touchend", e => {
-      e.preventDefault();
-      upPressed = false;
-})
-downTouch.addEventListener("touchend", e => {
-      e.preventDefault();
-      downPressed = false;
-})
-aTouch.addEventListener("touchend", e => {
-      e.preventDefault();
-})
-bTouch.addEventListener("touchend", e => {
-      e.preventDefault();
-})
-
-// Eventlisteners
-document.addEventListener("keydown", keyDownHandler, false);
-document.addEventListener("keyup", keyUpHandler, false);
-document.addEventListener("touchstart", touchStartHandler, false);
-document.addEventListener("touchend", touchEndHandler, false);
-
-
-
-// TOUCH Handlers
-function touchStartHandler(e) {
-    console.log(e);
-    [...e.changedTouches].forEach(touch => {
-        
-        document.getElementById("logT").innerHTML = parseInt(touch.pageX);
-        document.getElementById("logT_Y").innerHTML = parseInt(touch.pageY);
-
-    })
-}
-function touchEndHandler(e) {
-        console.log(e);
-}
-
-// DOWN Presses
-function keyDownHandler(e) {
-    if(e.key == "Right" || e.key == "ArrowRight" || e.key == "d") {
-        rightPressed = true;
-      e.preventDefault();
-    }
-    if(e.key == "Left" || e.key == "ArrowLeft" || e.key == "a") {
-        leftPressed = true;
-      e.preventDefault();
-    }
-
-    if(e.key == "Up" || e.key == "ArrowUp" || e.key == "w") {
-        upPressed = true;
-      e.preventDefault();
-    }
-    if(e.key == "Down" || e.key == "ArrowDown" || e.key == "s"){
-        downPressed = true;
-      e.preventDefault();
-    }
-    if(e.key == "Shift" || e.key == "Control"){
-    
-      e.preventDefault();
-        shootBall();
-    }
-}
-
-// KEY Releases
-function keyUpHandler(e) {
-    if(e.key == "Right" || e.key == "ArrowRight" || e.key == "d") {
-        rightPressed = false;
-      e.preventDefault();
-    }
-    if(e.key == "Left" || e.key == "ArrowLeft" || e.key == "a") {
-        leftPressed = false;
-      e.preventDefault();
-    }
-    if(e.key == "Up" || e.key == "ArrowUp" || e.key == "w") {
-        upPressed = false;
-      e.preventDefault();
-    }
-    if(e.key == "Down" || e.key == "ArrowDown" || e.key == "s") {
-        downPressed = false;
-      e.preventDefault();
-    }
-}
-
-function drawBackground() {
-    ctx.beginPath();
-    ctx.rect(0, 0,  canvas.width, canvas.height);
-    ctx.fillStyle = bgColor;
-    ctx.fill();
-    ctx.closePath();
- 
-}
-
-function drawScore() {
-    ctx.font = "30px Verdana";
-    // Create gradient
-    var gradient = ctx.createLinearGradient(0, 0, canvas.width, 0);
-    gradient.addColorStop("0"," magenta");
-    gradient.addColorStop("0.5", "blue");
-    gradient.addColorStop("1.0", "red");
-    // Fill with gradient
-    //ctx.fillStyle = gradient;
-    var scoreNow = "Score: " + parseInt(score);
-    ctx.fillText(scoreNow, 10, 90);
-}
-
-function drawBall() {
-    ctx.beginPath();
-    ctx.arc(ball.x, ball.y, ball.radius, 0, Math.PI*2);
-    ctx.fillStyle = ball.color;
-    ctx.fill();
-    ctx.closePath();
-    document.getElementById("logB").innerHTML = parseInt(ball.x);
-    document.getElementById("logB_Y").innerHTML = parseInt(ball.y);
-}
-
-function drawBullets() {
-  for (let bullet in balls){
-    ctx.beginPath();
-    ctx.arc(balls[bullet].x, balls[bullet].y, balls[bullet].radius, 0, Math.PI*2);
-    ctx.fillStyle = balls[bullet].color;
-    ctx.fill();
-    ctx.closePath();
-  }
-}
-
-
-function drawPaddle() {
-    ctx.beginPath();
-    ctx.arc(player.x, player.y, player.radius , 0, Math.PI*2);
-    ctx.fillStyle = player.color;
-    ctx.fill();
-    ctx.closePath();
-    document.getElementById("logP").innerHTML = player.x;
-    document.getElementById("logP_Y").innerHTML = player.y;
-}
-
-function drawBorder(){
-    ctx.beginPath();
-    ctx.rect(obstacle.x, obstacle.y, obstacle.size, obstacle.size);
-    ctx.fillStyle = obstacle.color;
-    ctx.fill();
-    ctx.closePath();
-    }
-
-
-function shootBall() {
-    var sizes = [10, 20, 30, 40];
-    var colors = ["#333c4e", "#7132a8", "#34a832", "#a83232",
-        "#fcfc51", "#03fcfc", "#ff8800", "#00d0ff"];
-    const yy = parseInt(Math.random() * sizes.length)
-    const xx = parseInt(Math.random() * colors.length)
-    balls.push( {
-          radius : sizes[yy],
-               x : player.x,
-               y : (player.y - player.radius),
-              dx : 2,
-              dy : -3,
-              vx : 2 / 10,
-              vy : -3 / 10,
-           color : colors[xx]
-    })
-    document.getElementById("logBullets").innerHTML = balls.length;
-}
-
-function isInBox(obj) {
-    
-    let toFarRight = ( obj.x - obj.radius + 5) > (obstacle.x + obstacle.size);
-    let toFarLeft = ( obj.x + obj.radius - 5) < obstacle.x;
-    let toHigh = (obj.y + obj.radius - 5) < obstacle.y;
-    let toLow = (obj.y - obj.radius + 5) > (obstacle.y + obstacle.size);
-
-
-    if(!toFarRight && !toFarLeft && !toHigh && !toLow){
-      score += 1;
-      return true;
-    } else {
-      return false;
-    }
-}
-
-function moveIt(obj, time){
-    obj.x += parseInt(obj.vx * time);
-    obj.y += parseInt(obj.vy * time);
-}
-
-function draw() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    drawBackground();
-    drawBorder();
-    drawBall();
-    drawBullets();
-    drawPaddle();
-    // drawScore();
-}
-
-function checkCollision(bb){
-    // Check Collsion Ball and floor or seeling
-    if(bb.x  > canvas.width - bb.radius || bb.x  < bb.radius) {
-        bb.vx = -bb.vx;
-    }
-    // Check for Collision to wall left and right
-    if(bb.y > canvas.height - bb.radius || bb.y < bb.radius) {
-        bb.vy = -bb.vy;
-    }
-    if(isInBox(bb)){
-        bb.vx *= -1;
-        bb.vy *= -1;
-    }
-    return bb;
-
-}
-
-let t0, previousTimeStamp;
-let done = false;
-
-function step(timestamp) {
-  if (t0 === undefined) {
-      t0 = timestamp;
-      }
-  let total_elapsed = timestamp - t0;
-  let dt = timestamp  - previousTimeStamp;
-
-    // START of Game Logic referring to dt
-
-    ball = checkCollision(ball);
-
-    balls.forEach(function (item, index) {
-            balls[index] = checkCollision(item);
-    });
-
-    /* // Check Collsion Ball and floor or seeling */
-    /* if(ball.x  > canvas.width - ball.radius || ball.x  < ball.radius) { */
-    /*     ball.vx = -ball.vx; */
-    /* } */
-    /* // Check for Collision to wall left and right */
-    /* if(ball.y > canvas.height - ball.radius || ball.y < ball.radius) { */
-    /*     ball.vy = -ball.vy; */
-    /* } */
-    /* if(isInBox(ball)){ */
-    /*     ball.vx *= -1; */
-    /*     ball.vy *= -1; */
-    /* } */
-
-
-    // Check for collision between ball and player i.e. paddle 
-    if(player.x - player.radius < ball.x + ball.radius && 
-        ball.x - ball.radius < (player.x + player.radius) && 
-        player.y - player.radius < ball.y + ball.radius  && 
-        ball.y - ball.radius < player.y + player.radius) {
-          ball.vy *= -1;
-          ball.vx *= -1;
-    }
-    
-
-    // check for collision between player and a Square Obstacle of oSize
-    if(rightPressed) {
-        player.x += 5;
-        if (isInBox(player)){
-            player.x -= 5;
-        }
-        if (player.x + player.radius > canvas.width){
-            player.x = canvas.width - player.radius;
-        }
-    }
-      else if(leftPressed) {
-        player.x -= 5;
-        if (isInBox(player)){
-            player.x += 5;
-        }
-        if (player.x < player.radius){
-            player.x = player.radius;
-        }
-    }
-    if(upPressed) {
-        player.y -= 5;
-        if (isInBox(player)){
-            player.y += 5;
-        }
-        if (player.y < player.radius) {
-            player.y = player.radius;
-        }
-    }
-    if(downPressed) {
-       player.y += 5;
-        if (isInBox(player)){
-            player.y -= 5;
-        }
-       if (player.y > canvas.height - player.radius) {
-           player.y = canvas.height - player.radius;
-       }
-    }
-   
-    // move the Balls
-    if(!isNaN(dt)) {
-      moveIt(ball, dt);
-      for (let b in balls) {
-        moveIt(balls[b], dt);
-      }
-    }
-
-    draw();
-
-    // der timer hier ist besser als der normale Intervaltimer
-    previousTimeStamp = timestamp
-    window.requestAnimationFrame(step);
-}
-window.requestAnimationFrame(step);
-
-</script>
+            <h2 id="lex-fridman-interviews">Lex Fridman Interviews</h2>
+<div class="youtube">
+    <iframe
+            src="https://www.youtube.com/embed/xNXC9UZsgiA"
+            webkitallowfullscreen
+            mozallowfullscreen
+            allowfullscreen>
+    </iframe>
+</div>
 
         </div>
 
@@ -628,6 +349,13 @@ window.requestAnimationFrame(step);
                         <a href="https://mevemo.de/">
                             <span class="button__icon">←</span>&nbsp;
                             <span class="button__text">Newer posts</span>
+                        </a>
+                    </span>
+                
+                    <span class="button next">
+                        <a href="https://mevemo.de/page/3/">
+                            <span class="button__text">Older posts</span>&nbsp;
+                            <span class="button__icon">→</span>
                         </a>
                     </span>
                 </div>

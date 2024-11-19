@@ -9,9 +9,11 @@ tags = []
 here I share stuff with my Mom
 
 ### Vorschlagliste
-- [eine Heissklebepistole fuer mein Akkusystem](https://www.amazon.de/Mellif-Hei%C3%9Fklebepistole-Makita-Akku-Klebestifte-Ladeger%C3%A4t/dp/B09LCCHQR8)
+- [eine programmierbare Makro-Tastatur](https://www.amazon.de/BRIMFORD-Programmierbar-Makrotastatur-Hot-Swap-Unterst%C3%BCtzung-Fotoproduktion/dp/B0CXHQ17YH)
 - [ein chinesisches Hack-Messer](https://www.amazon.de/SHAN-K%C3%BCchenmesser-ultrascharfes-ergonomischem-geschnittenes/dp/B07Q9ZS4B3)
+- [eine Heissklebepistole fuer mein Akkusystem](https://www.amazon.de/Mellif-Hei%C3%9Fklebepistole-Makita-Akku-Klebestifte-Ladeger%C3%A4t/dp/B09LCCHQR8)
 - [einen Entwicklerbaukasten incl. Kamera und ESP (programierbarer Steuereinheit)](https://www.amazon.de/FREENOVE-ESP32-WROVER-Included-Compatible-Wireless/dp/B0CJJKSN4F)
+- [eine Bordeaux Baumwollmuetze](https://www.amazon.de/CHILLOUTS-Herren-Longbeanie-Bordeaux-Einheitsgr%C3%B6%C3%9Fe/dp/B01MSLA4QO)
 - [einen MiniPC zum Basteln & Entwickeln](https://www.amazon.de/Raspberry-Pi-Model-GB/dp/B07TGBLK33)
 
 

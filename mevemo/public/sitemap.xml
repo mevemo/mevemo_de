@@ -42,6 +42,9 @@
         <loc>https://mevemo.de/page/4/</loc>
     </url>
     <url>
+        <loc>https://mevemo.de/page/5/</loc>
+    </url>
+    <url>
         <loc>https://mevemo.de/paps/</loc>
         <lastmod>1955-12-05</lastmod>
     </url>
@@ -70,6 +73,9 @@
         <loc>https://mevemo.de/tags/welcome/</loc>
     </url>
     <url>
+        <loc>https://mevemo.de/tags/world-of-warcraft/</loc>
+    </url>
+    <url>
         <loc>https://mevemo.de/tags/youtube/</loc>
     </url>
     <url>
@@ -79,5 +85,9 @@
     <url>
         <loc>https://mevemo.de/welcome-mevemo/</loc>
         <lastmod>2024-12-31</lastmod>
+    </url>
+    <url>
+        <loc>https://mevemo.de/wow/</loc>
+        <lastmod>2024-11-21</lastmod>
     </url>
 </urlset>
